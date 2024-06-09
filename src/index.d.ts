@@ -15,7 +15,7 @@ type StylesGenerator<P = {}> =
   (props: P) => CSSAttribute | string;
 type TagStyleGenerator<P = {}> =
   (props: P) => number | string | undefined;
-type TagArgs<P = {}> = Array<string | TagStyleGenerator<P>>;
+type TagArgs<P = {}> = Array<string | number | TagStyleGenerator<P>>;
 type StylesArg<P = {}> =
   | string
   | CSSAttribute

@@ -23,7 +23,7 @@ export function setup(prefixer, shouldForwardProp = null) {
 const ThemeContext = createContext();
 export function ThemeProvider(props) {
   return createComponent(ThemeContext.Provider, {
-    value: props.theme,
+    value: props.theme || {},
     get children() {
       return props.children;
     }

@@ -52,7 +52,7 @@ export declare function ThemeProvider<
 >(props: T): JSX.Element;
 export declare function useTheme(): DefaultTheme;
 export interface ThemeProp {
-  theme?: DefaultTheme;
+  theme: DefaultTheme;
 }
 interface AsProps {
   as?: ValidComponent;
